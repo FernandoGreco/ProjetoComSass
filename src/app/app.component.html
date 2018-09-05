@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 [ngClass]="tituloVermelho">
+    Welcome to {{ title }}! Usando class binding
+  </h1>
+
+  <h2 [style.color]="titleStyle ? 'green' : 'pink'">Style binding com condicional</h2>
+
+    <button (mouseenter)="myEvent($event)">My Button chama a função myEvent</button>
+
+    <p>{{ someProperty }}</p>
+
+    <p [@myAwesomeAnimation]='state' (click)="animateMe()">I will animate</p>
+
+</div>
+
